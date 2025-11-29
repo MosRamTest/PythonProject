@@ -2,10 +2,24 @@
 
 * This a simple Python Project template.
 
-## Software Requirements
-* Python 3.8 or higher
-* pip (Python package installer)
-* virtualenv (optional but recommended)
-* Git (for version control)
-* An IDE or text editor (e.g., VSCode, PyCharm, Sublime Text)
-* GitHub account (for repository hosting)
+## Recommended Software Requirements
+* Python - Latest stable version (3.8 or above)
+* pycharm
+* pip
+
+## Dependencies Required
+* Selenium
+* Pytest
+* Allure-pytest
+
+## Installation Of Dependencies
+* After cloning create a virtual environment using the command below:
+```bash
+     'python -m venv venv'  
+```
+
+## How to execute the test
+
+
+
+
