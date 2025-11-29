@@ -7,3 +7,6 @@ class ReadConfig_data():
 
     def getURL(self):
        return config.get('URLS', 'dev_url')
+
+    def loginData(self):
+       return config.get('login data', 'username')
