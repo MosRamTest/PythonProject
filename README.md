@@ -20,6 +20,9 @@
 
 ## How to execute the test
 
+* pytest -s -v -m"dev" --alluredir="allure-results" --browser chrome
+
+
 
 
 
