@@ -2,25 +2,26 @@ import pytest
 from selenium import webdriver
 
 
-
 @pytest.fixture
 def setup(browser):
-    if browser.lower() == "chrome":
+    if browser == 'chrome':
         driver = webdriver.Chrome()
 
-    elif browser.lower() == "firefox":
+    elif browser.lower() == 'edge':
+        driver = webdriver.Edge()
 
+    elif browser.lower() == 'firefox':
         driver = webdriver.Firefox()
 
-    elif browser.lower() == "edge":
-        driver = webdriver.Edge()
     else:
         driver = webdriver.Safari()
 
-        return driver
+    return driver
+
 
 def pytest_addoption(parser):
-    parser.addoption("--browser")
+    parser.addoption("--browser", action="store", default="chrome")
+
 
 @pytest.fixture()
 def browser(request):
